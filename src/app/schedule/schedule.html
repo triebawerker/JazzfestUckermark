@@ -1,0 +1,27 @@
+<h1>Schedule</h1>
+<div class="row">
+  <ul class="col-lg-12">
+    <li  *ngFor="let schedule of schedules" class="content jazzfest" >
+      <div class="date">
+        <span>{{ schedule.from | date: 'EEEE, d MMMM - HH:mm' }} Uhr</span>
+      </div>
+
+      <div class="band">
+        <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">{{ schedule.band.name }}</a>
+      </div>
+
+      <div>
+        <img src="{{ schedule.band.imageUrl }}" class="img-responsive" alt="{{ schedule.band.name }}"/>
+      </div>
+
+      <div *ngIf="schedule.featuring" class="featuring">Featuring {{ schedule.featuring }}</div>
+
+      <div class="location">
+        <a routerLink="/location/{{ schedule.location._id }}" routerLinkActive="active">
+          {{ schedule.location.name }} - {{ schedule.location.city }}
+        </a>
+      </div>
+
+    </li>
+  </ul>
+</div>
