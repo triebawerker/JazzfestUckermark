@@ -1,0 +1,13 @@
+<div class="row">
+  <div  class="col-lg-12 content jazzfest">
+    <h1>{{location?.name}}</h1>
+    <img *ngIf="location?.imageUrl" src="{{ location?.imageUrl }}" alt="{{ location?.name }}"/>
+    <p *ngIf="location?.name">{{ location?.name }}</p>
+    <p><span *ngIf="location?.zip">{{ location?.zip }}</span><span *ngIf="location?.city">{{ location?.city }}</span></p>
+    <p *ngIf="location?.street">{{ location?.street }}></p>
+    <p *ngIf="location?.phone">phone {{ location?.phone }}</p>
+    <p *ngIf="location?.fax">fax {{ location?.fax }}</p>
+    <a *ngIf="location?.web" href="{{ location?.web }}">{{ location?.web }}</a>
+    <a *ngIf="location?.email" href="mailto: {{ location?.email }}">{{ location?.email }}</a>
+  </div>
+</div>
