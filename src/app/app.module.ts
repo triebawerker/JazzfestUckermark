@@ -6,12 +6,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ScheduleService } from './schedule/schedule.service';
 import { BandService } from './bandDetail/band.service';
+import { LocationService } from './location/location.service'
 
 import { AppComponent } from './app.component';
 import { AboutComponent }  from './about/about.component';
 import { PriceComponent } from './price/price.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { BandDetailComponent } from './bandDetail/band-detail.component'
+import { BandDetailComponent } from './bandDetail/band-detail.component';
+import { LocationDetailComponent } from './location/location-detail.component';
 
 
 const appRoutes: Routes = [
@@ -19,11 +21,12 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'price', component: PriceComponent },
   { path: 'band/:id', component: BandDetailComponent },
+  { path: 'location/:id', component: LocationDetailComponent }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent
+    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -31,8 +34,9 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [ScheduleService, BandService],
+  providers: [ScheduleService, BandService, LocationService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

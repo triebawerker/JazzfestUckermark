@@ -1,7 +1,5 @@
 import { NgModule }       from '@angular/core';
 
-import { BandDetailComponent }    from './band-detail.component';
-
 import { BandService } from './band.service';
 
 import { BandRoutingModule } from './band-detail.routing';
@@ -11,7 +9,6 @@ import { BandRoutingModule } from './band-detail.routing';
     BandRoutingModule
   ],
   declarations: [
-    BandDetailComponent
   ],
   providers: [
     BandService

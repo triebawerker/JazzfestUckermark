@@ -4,6 +4,8 @@ import {Observable} from 'rxjs/Rx';
 
 import { Performance } from './performance.model';
 
+import {AppComponent} from '../app.component';
+
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -16,7 +18,7 @@ export class ScheduleService {
     getSchedules() : Observable<any> {
 
              // ...using get request
-             return this.http.get('http://localhost:3000/api/schedule')
+             return this.http.get(AppComponent.apiHost + '/api/schedule')
                             // ...and calling .json() on the response to return data
                              .map((res:Response) => res.json())
                             //...errors if any
