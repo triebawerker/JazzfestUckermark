@@ -4,6 +4,8 @@ import {Observable} from 'rxjs/Rx';
 
 import { Band } from './band-detail.model';
 
+import {AppComponent} from '../app.component';
+
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -20,7 +22,7 @@ export class BandService {
     console.log("id", id);
            // ...using get request
 
-     return this.http.get('http://localhost:3000/api/band/' + id)
+     return this.http.get(AppComponent.apiHost + '/api/band/' + id)
                     // ...and calling .json() on the response to return data
                      .map((res:Response) => res.json())
                      //...errors if any

@@ -19,10 +19,14 @@ body {
 }
 
 footer {
-  background-color: #494301;
-  color: white;
+  background-color: black;
+  color: #fcef5f;
   padding: 15px 0;
   margin-top:45px;
+}
+
+footer h3, footer a {
+  color: #fcef5f;
 }
 
 .content{
@@ -34,7 +38,6 @@ footer {
 }
 
 .band, .date, .featuring, .location {
-  font-size: 170%;
   font-family: 'Bitter';
   color: #313d26;
 }
@@ -46,10 +49,6 @@ footer {
 
 .band a {
   color: #313d26;
-}
-
-.location {
-  margin-top: 20px;
 }
 
 .location a {
@@ -109,24 +108,26 @@ ul {
 }
 
 h1 {
-    color: dark-gray;
+    color: #494301;
     font-family: 'Bitter';
     margin: 30px 0;
+    font-size: 320%;
+    font-weight: 7;
 }
 
-h2, .navi {
-}
 h2{
     font-size: 180%;
     margin: 25px 0 8px;
+    color: #494301;
 }
 
 h3 {
     font-size: 140%;
+    color: #494301;
 }
 
 h4 {
-    color: #C4C9DA;
+    color: #494301;
     font-size: 100%;
     line-height: 100%;
     padding: 3px 0 0;
@@ -139,32 +140,13 @@ p {
     padding-top: 0;
 }
 
-.impressum {
-    font-size: 130%;
-    line-height: 120%;
-    width: 90%;
-    padding: 0 15px;
-}
-
-h3.impressum {
-    margin: 30px 0 10px;
-    font-size: 260%;
-    text-align: left;
-}
-
-
-.schedule {
-    padding:5px 0px;
-    margin:10px 0;
-}
-
 nav {
   margin: 35px 0;
 }
 
 nav li {
   display: inline;
-  font-size: 200%;
+  font-size: 160%;
   color: #313d26;
   font-weight: bold;
   border-bottom: 5px solid #494301;
@@ -175,16 +157,17 @@ nav li:hover, navl li:active {
   border-bottom: 5px solid #C4B724;
 }
 
-nav li a, nav li a:hover, nav li a:active, nav li a:visited {
+nav li a, nav li a:hover, nav li a:active, nav li a:visited, nav li a:focus {
   text-decoration: none;
   color: #494301;
 }
 
+.schedule {
+  font-size: 210%;
+}
+
 .band > p {
-    font-family: 'Bitter';
     color: #800909;
-    font-size: 120%;
-    line-height:120%;
     padding-left:10px;
 }
 
@@ -199,7 +182,6 @@ nav li a, nav li a:hover, nav li a:active, nav li a:visited {
 
 .bandDetail p, ul {
     margin: 7px 0;
-    font-size: 130%;
 }
 
 .datetime {
@@ -237,7 +219,7 @@ a:hover {
     color: darkgray;
 }
 
-.navi li a {
+.navi li a, navi li a:active {
     display: block;
     text-decoration: none;
     color: #C4C9DA;
@@ -248,6 +230,7 @@ a:hover {
 .navi li a:hover {
     color: #202743;
     background-color: #4d515f;
+    text-decoration: none;
 }
 
 .year:after {
@@ -263,43 +246,6 @@ a:hover {
     height: 135px;
     text-align: center;
     padding: 15px 0;
-}
-
-.bandlist .link, .band .link {
-    font-size: 100%;
-}
-
-p.address {
-    margin:3px 0;
-    padding:2px 30px;
-    font-size: 120%;
-
-}
-
-.address-about {
-    text-align: left;
-}
-
-.address-about li {
-    padding: 4px 0px;
-}
-
-.line {
-    margin: 30px 0;
-    width: 99%;
-    border-bottom: 4px dotted #f8ab29;
-}
-
-label.ng-binding, .current-filter {
-    color: white;
-}
-
-.right-column > button {
-    margin-bottom: 10px;
-}
-
-ul#select-year>li>input {
-    margin: 0 0 4px 0;
 }
 
 .header img {

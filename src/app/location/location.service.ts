@@ -4,6 +4,8 @@ import {Observable} from 'rxjs/Rx';
 
 import { Location } from './location-detail.model';
 
+import {AppComponent} from '../app.component';
+
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -20,7 +22,7 @@ export class LocationService {
     console.log("id", id);
            // ...using get request
 
-     return this.http.get('http://localhost:3000/api/location/' + id)
+     return this.http.get(AppComponent.apiHost + '/api/location/' + id)
                     // ...and calling .json() on the response to return data
                      .map((res:Response) => res.json())
                      //...errors if any
