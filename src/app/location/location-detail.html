@@ -5,7 +5,7 @@
     <img *ngIf="location?.imageUrl" src="{{ location?.imageUrl }}" alt="{{ location?.name }}"/>
 
     <div class="">
-      <a *ngIf="location?.web" href="{{ location?.web }}">{{ location?.web }}</a>
+      <a *ngIf="location?.web" href="http://{{ location?.web }}">{{ location?.web }}</a>
       <a *ngIf="location?.email" href="mailto: {{ location?.email }}">{{ location?.email }}</a>
     </div>
 
