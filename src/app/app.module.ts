@@ -14,6 +14,7 @@ import { PriceComponent } from './price/price.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { BandDetailComponent } from './bandDetail/band-detail.component';
 import { LocationDetailComponent } from './location/location-detail.component';
+import { FooterComponent} from './footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -26,7 +27,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent
+    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
