@@ -21,6 +21,7 @@ import { NaviComponent } from './navi/navi.component';
 
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'schedule', pathMatch: 'full' },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'about', component: AboutComponent },
   { path: 'price', component: PriceComponent },
