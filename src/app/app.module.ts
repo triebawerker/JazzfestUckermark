@@ -18,9 +18,11 @@ import { LocationDetailComponent } from './location/location-detail.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NaviComponent } from './navi/navi.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'schedule', pathMatch: 'full' },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'about', component: AboutComponent },
@@ -31,7 +33,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent, FooterComponent, HeaderComponent, NaviComponent
+    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent, FooterComponent, HeaderComponent, NaviComponent, HomeComponent
   ],
   imports: [
     BrowserModule,

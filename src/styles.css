@@ -63,7 +63,6 @@ footer h3, footer a {
   text-align: center;
 }
 
-
 .jazzfest p, .jazzfest ul {
     align-content: stretch;
     max-width: 650px;
@@ -97,10 +96,14 @@ ul.musician-instrument {
 }
 
 .content img {
-
     margin-top: 30px;
     margin-bottom: 20px;
     border: 5px solid #494301;
+}
+
+img {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -111,24 +114,24 @@ h1 {
     color: #494301;
     font-family: 'Bitter';
     margin: 30px 0;
-    font-size: 320%;
+    font-size:  180%;
     font-weight: 7;
 }
 
 h2{
-    font-size: 180%;
+    font-size: 150%;
     margin: 25px 0 8px;
     color: #494301;
 }
 
 h3 {
-    font-size: 140%;
+    font-size: 130%;
     color: #494301;
 }
 
 h4 {
     color: #494301;
-    font-size: 100%;
+    font-size: 110%;
     line-height: 100%;
     padding: 3px 0 0;
     margin: 10px 0;
