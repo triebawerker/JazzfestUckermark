@@ -18,7 +18,7 @@ export class ScheduleService {
     getSchedules() : Observable<any> {
 
              // ...using get request
-             return this.http.get(AppComponent.apiHost + '/api/schedule')
+             return this.http.get(AppComponent.apiHost + '/api/schedule/58669aa045721cbc2ce68fa1')
                             // ...and calling .json() on the response to return data
                              .map((res:Response) => res.json())
                             //...errors if any
