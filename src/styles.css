@@ -6,12 +6,14 @@ light: #C4B724;
 
 http://paletton.com/#uid=33i100kvMt4aJrRl+s9IgpIUnmd
 
+font-family: 'Bree Serif', serif;
+
 */
 body {
     text-align: center;
     background-color: #fcef5f;
     color: #313d26;
-    font-size: 190%;
+    font-size: 180%;
 }
 
 .logo {
@@ -38,7 +40,7 @@ footer h3, footer a {
 }
 
 .band, .date, .featuring, .location {
-  font-family: 'Bitter';
+  font-family: 'Bree Serif';
   color: #313d26;
 }
 
@@ -88,9 +90,6 @@ ul.musician-instrument {
     padding: 90px 0 0;
 }
 
-.termine {
-}
-
 .img-responsive {
     display: inline;
 }
@@ -111,31 +110,34 @@ ul {
 }
 
 h1 {
-    color: #494301;
-    font-family: 'Bitter';
-    margin: 30px 0;
-    font-size:  180%;
-    font-weight: 7;
+  color: #494301;
+  font-family: 'Bree Serif', serif;
+  margin: 30px 0;
+  font-size:  180%;
+  font-weight: 7;
 }
 
 h2{
-    font-size: 150%;
-    margin: 25px 0 8px;
-    color: #494301;
+  font-family: 'Bree Serif', serif;
+  font-size: 150%;
+  margin: 25px 0 8px;
+  color: #494301;
 }
 
 h3 {
-    font-size: 130%;
-    color: #494301;
+  font-family: 'Bree Serif', serif;
+  font-size: 130%;
+  color: #494301;
 }
 
 h4 {
-    color: #494301;
-    font-size: 110%;
-    line-height: 100%;
-    padding: 3px 0 0;
-    margin: 10px 0;
-    font-weight:normal
+  font-family: 'Bree Serif', serif;
+  color: #494301;
+  font-size: 110%;
+  line-height: 100%;
+  padding: 3px 0 0;
+  margin: 10px 0;
+  font-weight:normal
 }
 
 p {
@@ -143,27 +145,34 @@ p {
     padding-top: 0;
 }
 
-nav {
-  margin: 35px 0;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
-nav li {
-  display: inline;
-  font-size: 160%;
-  color: #313d26;
+.nav, .navbar, .navbar-nav, .navbar-collapse, .navbar-default {
+  background-color: black;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
   font-weight: bold;
-  border-bottom: 5px solid #494301;
-  margin: 10px 25px;
+  color: #FFFFFF;
 }
 
-nav li:hover, navl li:active {
-  border-bottom: 5px solid #C4B724;
+.navbar-default .navbar-nav > li > a {
+  font-weight: bold;
+  color: #fcef5f;
 }
 
-nav li a, nav li a:hover, nav li a:active, nav li a:visited, nav li a:focus {
+/*navbar-nav > li > a, navbar-nav > li > li a:active, navbar-nav > li >  a:visited, navbar-nav > li >  a:focus {
   text-decoration: none;
-  color: #494301;
-}
+  color: #fcef5f;
+}*/
 
 .schedule {
   font-size: 210%;
@@ -220,20 +229,6 @@ a {
 
 a:hover {
     color: darkgray;
-}
-
-.navi li a, navi li a:active {
-    display: block;
-    text-decoration: none;
-    color: #C4C9DA;
-    padding: 3px 19px;
-    border-radius: 3px;
-}
-
-.navi li a:hover {
-    color: #202743;
-    background-color: #4d515f;
-    text-decoration: none;
 }
 
 .year:after {
