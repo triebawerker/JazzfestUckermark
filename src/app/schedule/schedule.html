@@ -1,24 +1,31 @@
-<div class="row">
-    <div  *ngFor="let schedule of schedules" class="content jazzfest">
-      <div class="date col">
-        <span>{{ schedule.from | date: 'EEEE, d MMMM - HH:mm' }} Uhr</span>
-      </div>
 
-      <div class="band col">
-        <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">{{ schedule.band.name }}</a>
-      </div>
+<div  *ngFor="let schedule of schedules" class="row schedule">
 
-      <div class="col">
-        <img src="{{ schedule.band.imageUrl }}" class="img-responsive" alt="{{ schedule.band.name }}"/>
-      </div>
-
-      <div *ngIf="schedule.featuring" class="featuring col">Featuring {{ schedule.featuring }}</div>
-
-      <div class="location col">
-        <a routerLink="/location/{{ schedule.location._id }}" routerLinkActive="active">
-          {{ schedule.location.name }} - {{ schedule.location.city }}
-        </a>
-      </div>
-
+  <div class="row">
+    <div class="date col">
+      <span>{{ schedule.from | date: 'EEEE, d MMMM - HH:mm' }} Uhr</span>
     </div>
   </div>
+
+  <div class="row">
+    <div class="band col">
+      <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">{{ schedule.band.name }}</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <img src="{{ schedule.band.imageUrl }}" class="img-responsive" alt="{{ schedule.band.name }}"/>
+    </div>
+
+    <h3 *ngIf="schedule.featuring" class="featuring col">Featuring {{ schedule.featuring }}</h3>
+  </div>
+
+  <div class="row">
+    <div class="location col">
+      <a routerLink="/location/{{ schedule.location._id }}" routerLinkActive="active">
+        {{ schedule.location.name }} - {{ schedule.location.city }}
+      </a>
+    </div>
+  </div>
+</div>
