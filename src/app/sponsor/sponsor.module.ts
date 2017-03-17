@@ -6,4 +6,4 @@ import { NgModule } from '@angular/core';
   ],
   providers: []
 })
-export class FooterModule {}
+export class SponsorModule {}

@@ -11,4 +11,5 @@ import { Subscription } from '../../../node_modules/rxjs/Subscription.d';
 })
 
 export class FooterComponent {
+  "foo": "bla";
 }
