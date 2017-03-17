@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NaviComponent } from './navi/navi.component';
 import { HomeComponent } from './home/home.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
 
 
 const appRoutes: Routes = [
@@ -33,7 +34,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent, FooterComponent, HeaderComponent, NaviComponent, HomeComponent
+    AppComponent, AboutComponent, PriceComponent, ScheduleComponent, BandDetailComponent, LocationDetailComponent, FooterComponent, HeaderComponent, NaviComponent, HomeComponent, SponsorComponent
   ],
   imports: [
     BrowserModule,
