@@ -21,12 +21,12 @@ $header: #494301;
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  font-size: 150%;
+@media (min-width: 768px) and (max-width: 991px) {
+  font-size: 180%;
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199) {
   font-size: 180%;
 }
 
@@ -62,6 +62,7 @@ footer h4, footer a {
   background-color: $content-dark;
   text-align: center;
   padding: 5px 0;
+  font-family: $bree;
 }
 
 .featuring {
