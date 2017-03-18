@@ -2,19 +2,18 @@
   <div  class="col-lg-12 content jazzfest">
     <h1>{{location?.name}}</h1>
 
-    <img *ngIf="location?.imageUrl" src="{{ location?.imageUrl }}" alt="{{ location?.name }}" class="img-responsive"/>
+    <img *ngIf="location?.imageUrl" src="{{ location.imageUrl }}" alt="{{ location.name }}" class="img-responsive"/>
 
     <div class="">
-      <a *ngIf="location?.web" href="http://{{ location?.web }}">{{ location?.web }}</a>
-      <a *ngIf="location?.email" href="mailto: {{ location?.email }}">{{ location?.email }}</a>
+      <a *ngIf="location?.web" href="http://{{ location?.web }}">{{ location.name }}</a>
     </div>
 
     <ul>
-      <li *ngIf="location?.name">{{ location?.name }}</li>
-      <li>Ort: <span *ngIf="location?.zip">{{ location?.zip }}</span><span *ngIf="location?.city">{{ location?.city }}</span></li>
-      <li *ngIf="location?.street">Strasse: {{ location?.street }}></li>
-      <li *ngIf="location?.phone">Telefon: {{ location?.phone }}></li>
-      <li *ngIf="location?.fax">Fax: {{ location?.fax }}></li>
+      <li><span *ngIf="location?.zip">{{ location.zip }}</span><span *ngIf="location?.city">{{ location.city }}</span></li>
+      <li *ngIf="location?.street">{{ location.street }}</li>
+      <li *ngIf="location?.phone">Telefon: {{ location.phone }}</li>
+      <li *ngIf="location?.fax">Fax: {{ location.fax }}</li>
+      <li *ngIf="location?.email">Fax: {{ location.email }}</li>
     </ul>
   </div>
 </div>
