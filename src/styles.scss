@@ -7,10 +7,9 @@ light: #C4B724;
 http://paletton.com/#uid=33i100kvMt4aJrRl+s9IgpIUnmd
 
 font-family: $font-family;
-
-
-
 */
+
+
 $yellow: #fcef5f;
 $content-light: #cee5b7;
 $content-dark: #313d26;
@@ -20,11 +19,27 @@ $bree: 'Bree serif', sans-serif;
 
 $header: #494301;
 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  font-size: 150%;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  font-size: 180%;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  font-size: 180%;
+}
+
 body {
     text-align: center;
     background-color: $yellow;
     color: $content-dark;
-    font-size: 180%;
+    font-size: 130%;
 }
 
 .logo {
@@ -43,7 +58,6 @@ footer h4, footer a {
 }
 
 .band, .date, .location {
-
   color: $content-light;
   background-color: $content-dark;
   text-align: center;
@@ -117,6 +131,9 @@ ul {
 
 h1, h2, h3, h4 {
   color: $header;
+}
+
+h1, h2, h3, h4, .schedule a, .band a, .location a, .date a {
   font-family: $bree;
   font-weight: 7;
 }
@@ -233,4 +250,8 @@ a:hover {
   a {
     margin-bottom: 15px;
   }
+}
+
+hr {
+  border: 2px solid black;
 }
