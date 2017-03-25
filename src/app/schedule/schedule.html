@@ -3,14 +3,8 @@
 
   <div class="row">
     <div class="date col">
-      <span>{{ schedule.from | date: 'EEEE, d MMMM - HH:mm' }} Uhr</span>
+      <span>{{ schedule.from | date: 'EEEE, d. MMMM - HH:mm' }} Uhr</span>
       <div>{{ schedule.name }} - {{ schedule.location.name }} {{ schedule.location.city }}</div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="band col">
-
     </div>
   </div>
 
@@ -20,7 +14,7 @@
         <img src="{{ schedule.band.imageUrl }}" class="img-responsive" alt="{{ schedule.band.name }}"/>
       </a>
     </div>
-    <div class="col">
+    <div class="col band">
       <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">{{ schedule.band.name }}</a>
     </div>
 
