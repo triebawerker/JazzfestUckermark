@@ -21,6 +21,7 @@ import { NaviComponent } from './navi/navi.component';
 import { HomeComponent } from './home/home.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 
+import { LOCALE_ID } from '@angular/core';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -42,7 +43,12 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [ScheduleService, BandService, LocationService],
+  providers: [
+    ScheduleService,
+    BandService,
+    LocationService,
+    { provide: LOCALE_ID, useValue: "de-DE" }
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
