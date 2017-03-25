@@ -4,18 +4,24 @@
   <div class="row">
     <div class="date col">
       <span>{{ schedule.from | date: 'EEEE, d MMMM - HH:mm' }} Uhr</span>
+      <div>{{ schedule.name }} - {{ schedule.location.name }} {{ schedule.location.city }}</div>
     </div>
   </div>
 
   <div class="row">
     <div class="band col">
-      <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">{{ schedule.band.name }}</a>
+
     </div>
   </div>
 
   <div class="row">
     <div class="col">
-      <img src="{{ schedule.band.imageUrl }}" class="img-responsive" alt="{{ schedule.band.name }}"/>
+      <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">
+        <img src="{{ schedule.band.imageUrl }}" class="img-responsive" alt="{{ schedule.band.name }}"/>
+      </a>
+    </div>
+    <div class="col">
+      <a routerLink="/band/{{ schedule.band._id }}" routerLinkActive="active">{{ schedule.band.name }}</a>
     </div>
 
     <h3 *ngIf="schedule.featuring" class="featuring col">Featuring {{ schedule.featuring }}</h3>
