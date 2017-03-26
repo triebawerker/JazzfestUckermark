@@ -2,9 +2,14 @@
 <div  *ngFor="let schedule of schedules" class="row schedule">
 
   <div class="row">
-    <div class="date col">
-      <span>{{ schedule.from | date: 'EEEE, d. MMMM - HH:mm' }} Uhr</span>
-      <div>{{ schedule.name }} - {{ schedule.location.name }} {{ schedule.location.city }}</div>
+    <div class="col date">
+      {{ schedule.from | date: 'EEEE, d. MMMM - HH:mm' }} Uhr
+      <div class="band">
+        {{ schedule.name }}
+      </div>
+      <div>
+        {{ schedule.location.name }} {{ schedule.location.city }}
+      </div>
     </div>
   </div>
 
