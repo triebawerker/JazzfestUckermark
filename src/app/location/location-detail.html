@@ -9,7 +9,7 @@
     </div>
 
     <ul>
-      <li><span *ngIf="location?.zip">{{ location.zip }}</span><span *ngIf="location?.city">{{ location.city }}</span></li>
+      <li><span *ngIf="location?.zip">{{ location.zip }}</span> <span *ngIf="location?.city">{{ location.city }}</span></li>
       <li *ngIf="location?.street">{{ location.street }}</li>
       <li *ngIf="location?.phone">Telefon: {{ location.phone }}</li>
       <li *ngIf="location?.fax">Fax: {{ location.fax }}</li>
