@@ -13,7 +13,7 @@
       <li *ngIf="location?.street">{{ location.street }}</li>
       <li *ngIf="location?.phone">Telefon: {{ location.phone }}</li>
       <li *ngIf="location?.fax">Fax: {{ location.fax }}</li>
-      <li *ngIf="location?.email">Fax: {{ location.email }}</li>
+      <li *ngIf="location?.email"><a href="mailto{{ location.email }}">{{ location.email }}</a></li>
     </ul>
   </div>
 </div>
