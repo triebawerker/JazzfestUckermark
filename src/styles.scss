@@ -19,22 +19,6 @@ $bree: 'Bree serif', sans-serif;
 
 $header: #494301;
 
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  font-size: 180%;
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199) {
-  font-size: 180%;
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  font-size: 180%;
-}
-
 body {
     text-align: center;
     background-color: $yellow;
@@ -183,6 +167,12 @@ p {
     padding-top: 0;
 }
 
+a {
+  font-size: 160%;
+  color: $content-light;
+
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -224,6 +214,7 @@ p {
 
 .band-detail {
     background-color: $content-light;
+    padding:25px 0;
 }
 
 a {

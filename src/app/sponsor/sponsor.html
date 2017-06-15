@@ -3,19 +3,20 @@
   <h2>Partner</h2>
     <div  *ngFor="let group of partners" class="row">
       <div  *ngFor="let partner of group">
-        <div class="col-lg-2 sponsor">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 sponsor">
           <div class="sponsor-logo">
             <img *ngIf="partner?.img" src="assets/images/sponsors/{{partner.img}}" class="img-responsive" alt="{{partner.name}}"/>
           </div>
             <a *ngIf='partner?.link' href="http://{{ partner.link }}">{{ partner.linkname }}</a>
         </div>
+
     </div>
   </div>
 
   <h2>Sponsoren</h2>
   <div  *ngFor="let group of sponsors" class="row">
     <div  *ngFor="let sponsor of group">
-      <div class="col-lg-2 sponsor">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6  sponsor">
         <div class="sponsor-logo">
           <img *ngIf="sponsor?.img" src="assets/images/sponsors/{{sponsor.img}}" class="img-responsive" alt="{{sponsor.name}}"/>
         </div>
