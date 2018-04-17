@@ -22,7 +22,6 @@ export class ScheduleComponent {
   getSchedule() {
     this._scheduleService.getSchedules().subscribe(
       data => { this.schedules = data},
-      err => console.error(err),
       () => console.log('done loading schedule')
     );
   }
