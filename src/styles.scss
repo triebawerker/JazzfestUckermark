@@ -190,6 +190,12 @@ p {
     padding-top: 0;
 }
 
+a {
+  font-size: 160%;
+  color: $content-light;
+
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -230,7 +236,12 @@ p {
 }
 
 .band-detail {
+<<<<<<< HEAD
     background-color: $box-light;
+=======
+    background-color: $content-light;
+    padding:25px 0;
+>>>>>>> a363074b207f9186a74e99236714aa2555bdc409
 }
 
 a {
