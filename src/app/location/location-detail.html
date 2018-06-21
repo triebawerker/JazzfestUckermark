@@ -1,5 +1,5 @@
 <div class="row">
-  <div  class="col-lg-12 content jazzfest">
+  <div  class="col-lg-12 location-detail jazzfest">
     <h1>{{location?.name}}</h1>
 
     <img *ngIf="location?.imageUrl" src="{{ location.imageUrl }}" alt="{{ location.name }}" class="img-responsive"/>
@@ -8,12 +8,13 @@
       <a *ngIf="location?.web" href="http://{{ location?.web }}">{{ location.name }}</a>
     </div>
 
-    <ul>
-      <li><span *ngIf="location?.zip">{{ location.zip }}</span><span *ngIf="location?.city">{{ location.city }}</span></li>
+    <ul class = "location-address">
+      <li><span *ngIf="location?.zip">{{ location.zip }}</span> <span *ngIf="location?.city">{{ location.city }}</span></li>
       <li *ngIf="location?.street">{{ location.street }}</li>
       <li *ngIf="location?.phone">Telefon: {{ location.phone }}</li>
       <li *ngIf="location?.fax">Fax: {{ location.fax }}</li>
-      <li *ngIf="location?.email">Fax: {{ location.email }}</li>
+      <li *ngIf="location?.email">Email: {{ location.email }}</li>
+      <li *ngIf="location?.web">Web: <a href="http://{{ location.web }}">{{ location.web }}</a></li>
     </ul>
   </div>
 </div>

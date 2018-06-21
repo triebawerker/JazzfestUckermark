@@ -10,4 +10,5 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class AppComponent {
   public static apiHost=environment.api_host
+  public static schedule=environment.schedule
 }

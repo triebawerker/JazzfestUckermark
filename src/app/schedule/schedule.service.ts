@@ -20,7 +20,7 @@ export class ScheduleService {
              // ...using get request
              // 2017: 586a2d9eb60a36e418915952
              // 2018: 5a932f0eb3516f061cf12cba
-             return this.http.get(AppComponent.apiHost + '/api/schedule/586a2d9eb60a36e418915952')
+             return this.http.get(AppComponent.apiHost + '/api/schedule/' + AppComponent.schedule)
                             // ...and calling .json() on the response to return data
                              .map((res:Response) => res.json())
                             //...errors if any

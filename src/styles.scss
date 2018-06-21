@@ -1,6 +1,6 @@
 /*
 $orange: #F6882F;
-$yellow: #fcef5f
+$background: #fcef5f
 $dark: #494301;
 light: #C4B724;
 
@@ -9,63 +9,66 @@ http://paletton.com/#uid=33i100kvMt4aJrRl+s9IgpIUnmd
 font-family: $font-family;
 */
 
-
-$yellow: #fcef5f;
-$content-light: #cee5b7;
-$content-dark: #313d26;
+$background: #66CCFF;
+$header: #66CCFF;
+// $content-light: #cee5b7;
+$content-light: #FFFFFF;
+$content-dark: #CC3366;
+$content-yellow: #FFFF99;
+$box-light: #66CCFF;
+$box-dark: #66CCFF;
 $content-link-hover: lightgray;
 
 $bree: 'Bree serif', sans-serif;
 
-$header: #494301;
+// $header: #494301;
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  font-size: 180%;
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199) {
-  font-size: 180%;
+@media (min-width: 768px) {
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  font-size: 180%;
 }
 
 body {
     text-align: center;
-    background-color: $yellow;
-    color: $content-dark;
-    font-size: 130%;
+    background-color: $background;
+    color: #FFFFFF;
+    font-size: 180%;
 }
 
 .logo {
   margin-top: 30px;
+
+}
+
+header {
+  background-color: $header;
 }
 
 footer {
   background-color: black;
-  color: $yellow;
+  color: $background;
   padding: 15px 0;
   margin-top: 45px;
 }
 
 footer h4, footer a {
-  color: $yellow;
+  color: $content-dark;
 }
 
 .date, .location {
   color: $content-light;
-  background-color: $content-dark;
+  background-color: $box-dark;
   padding: 15px 0;
 }
 
 .band, .date, .location {
   text-align: center;
   font-family: $bree;
+  font-size: 120%;
 }
 
 .featuring {
@@ -73,28 +76,24 @@ footer h4, footer a {
 }
 
 .band {
-  color: $yellow;
   padding: 15px 0;
 }
 
 .band a {
-  font-size: 240%;
+  font-size: 140%;
   color: $content-dark;
 }
 
-
-.date {
-  font-size: 200%;
-}
-
 .schedule a {
-  font-size: 200%;
+  color: $content-dark;
 }
 
-.schedule {
+.schedule, .band-detail, .location-detail {
   padding: 0;
-  background-color: $content-light;
+  background-color: $box-light;
   margin-bottom: 50px;
+  border: 8px dotted white;
+  border-radius: 25px;
 }
 
 .schedule .row {
@@ -103,8 +102,15 @@ footer h4, footer a {
 }
 
 .location a {
-  font-size: 240%;
-  color: $content-light;
+  color: $content-yellow;
+}
+
+.location a:hover {
+  color: $content-dark;
+}
+
+ul.location-address li span {
+  font-size: 22px;
 }
 
 .jazzfest p, .jazzfest ul {
@@ -155,9 +161,10 @@ h1, h2, h3, h4 {
   color: $header;
 }
 
-h1, h2, h3, h4, .schedule a, .band a, .location a, .date a {
+h1, h2, h3, h4 {
   font-family: $bree;
   font-weight: 7;
+  color: $content-dark;
 }
 
 h1 {
@@ -223,15 +230,15 @@ p {
 }
 
 .band-detail {
-    background-color: $content-light;
+    background-color: $box-light;
 }
 
 a {
-    color: #313d26;
+    color: $content-dark;
 }
 
 a:hover {
-    color: darkgray;
+    color: $content-yellow;
 }
 
 .sponsor {
@@ -245,7 +252,6 @@ a:hover {
 
   p, a {
     text-align: center;
-    font-size: 90%;
   }
 
   p {
